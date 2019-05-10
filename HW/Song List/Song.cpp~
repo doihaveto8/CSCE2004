@@ -1,0 +1,53 @@
+#include "Song.h"
+
+Song::Song()
+{
+	name = "";
+	artist = "";
+	genre = "";
+	year = 0;
+	seconds = 0;
+}
+
+void Song::set(string n, string a, string g, int y, int s)
+{
+	name = n;
+	artist = a;
+	genre = g;
+	year = y;
+	seconds = s;
+}
+
+void Song::get(string &n, string &a, string &g, int &y, int &s)
+{
+	n = name;
+	a = artist;
+	g = genre;
+	y = year;
+	s = seconds;
+}
+
+void Song::print()
+{
+	cout << "Name: " << name << endl;
+	cout << "artist: " << artist << endl;
+	cout << "genre: " << genre << endl;
+	cout << "year: " << year << endl;
+	minsec(seconds);
+	cout << " " << endl;
+}
+
+void Song::minsec(int s)
+{
+	int min;
+	int sec;
+	int zero = 0;
+
+	min = s / 60;
+	sec = s - (min * 60);
+
+	if (sec <= 9)
+	cout << "Time: " << min << ":" << zero << sec << endl;
+	else
+	cout << "Time: " << min << ":" << sec << endl;
+}

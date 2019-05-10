@@ -1,0 +1,25 @@
+#include "part.h"
+
+int main()
+{
+	Part p1;
+	string a;
+	float b;
+	int c;
+	string d;
+	string e;
+
+	p1.set("Gear", 0.99, 50, "steel", "no");
+
+	cout << "Part 1 information: " << endl;
+	p1.print();
+
+	p1.get(a, b, c, d, e);
+	cout << "Name: " << a << endl;
+	cout << "Cost: " << b << endl;
+	cout << "Stock: " << c << endl;
+	cout << "Material: " << d << endl;
+	cout << "Flammability: " << e << endl;
+
+return 0;
+}

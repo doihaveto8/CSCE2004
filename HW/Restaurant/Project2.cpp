@@ -1,0 +1,186 @@
+#include <iostream>
+#include <iomanip>
+#include <cctype>
+#include <cmath>
+using namespace std;
+int main()
+{
+int restchoice = 0;
+int foodchoice = 0;
+float price = 0;
+float cost = 0;
+// Display Restaraunt Choices
+cout << "Please decide where you want food from: " << endl;
+cout << "Type 1 for McDonald's" << endl;
+cout << "Type 2 for Wendy's" << endl;
+cout << "Type 3 for Burger King" << endl;
+cin >> restchoice;
+
+switch (restchoice)
+{
+   case 1:
+     // They decided McDonald's
+     cout << "Thank you for choosing McDonald's!" << endl;
+     cout << "What would you like to eat?" << endl;
+     cout << "Type 1 for Big Mac ($6.99)" << endl;
+     cout << "Type 2 for Grand Mac ($8.99)" << endl;
+     cout << "Type 3 for Chicken McNuggets ($5.99)" << endl;
+     cout << "Type 4 for Apple Pie ($2.99)" << endl;
+     cout << "Type 5 for Large Sweet Tea ($1.00)" << endl;
+     cout << "Keep in mind tax is included in price calculation" << endl;
+     cin >> foodchoice;
+     switch (foodchoice)
+     {
+        case 1:
+          cout << "Thank you for ordering the Big Mac!" << endl;
+          price = 6.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 2:
+          cout << "Thank you for ordering the Grand Mac!" << endl;
+          price = 8.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 3:
+          cout << "Thank you for ordering the Chicken McNuggets!" << endl;
+          price = 5.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 4:
+          cout << "Thank you for ordering the Apple Pie!" << endl;
+          price = 2.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 5:
+          cout << "Thank you for ordering a Large Sweet Tea!" << endl;
+          price = 1;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        default:
+          cout << "We're sorry, but we do not serve that option." << endl;
+          break;
+     }
+     break;
+   case 2:
+     // They decided Wendy's
+     cout << "Thank you for choosing Wendy's!" << endl;
+     cout << "What would you like to eat?" << endl;
+     cout << "Type 1 for Baconator ($7.99)" << endl;
+     cout << "Type 2 for Dave's Triple ($9.99)" << endl;
+     cout << "Type 3 for Chicken Nuggets ($6.99)" << endl;
+     cout << "Type 4 for Salad ($5.99)" << endl;
+     cout << "Type 5 for Frosty ($1.99)" << endl;
+     cout << "Keep in mind tax is included in price calculation" << endl;
+     cin >> foodchoice;
+     switch (foodchoice)
+     {
+        case 1:
+          cout << "Thank you for ordering the Baconator!" << endl;
+          price = 7.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 2:
+          cout << "Thank you for ordering Dave's Triple!" << endl;
+          price = 9.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(4);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 3:
+          cout << "Thank you for ordering the Chicken Nuggets!" << endl;
+          price = 6.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 4:
+          cout << "Thank you for ordering the Salad!" << endl;
+          price = 5.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 5:
+          cout << "Thank you for ordering a Frosty!" << endl;
+          price = 1.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        default:
+          cout << "We're sorry, but we do not serve that option." << endl;
+          break;
+     }
+     break;
+   case 3:
+     // They decided Burger King
+     cout << "Thank you for choosing Burger King!" << endl;
+     cout << "What would you like to eat?" << endl;
+     cout << "Type 1 for Rodeo Burger ($6.99)" << endl;
+     cout << "Type 2 for Big King ($8.99)" << endl;
+     cout << "Type 3 for Chicken Nuggets ($6.99)" << endl;
+     cout << "Type 4 for Apple Pie ($2.99)" << endl;
+     cout << "Type 5 for Soda ($1.99)" << endl;
+     cout << "Keep in mind tax is included in price calculation" << endl;
+     cin >> foodchoice;
+     switch (foodchoice)
+     {
+        case 1:
+          cout << "Thank you for ordering the Rodeo Burger!" << endl;
+          price = 6.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 2:
+          cout << "Thank you for ordering the Big King!" << endl;
+          price = 8.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 3:
+          cout << "Thank you for ordering the Chicken Nuggets!" << endl;
+          price = 6.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 4:
+          cout << "Thank you for ordering the Apple Pie!" << endl;
+          price = 2.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        case 5:
+          cout << "Thank you for ordering a Soda!" << endl;
+          price = 1.99;
+          cost = price + (price * 0.09);
+          cout << setprecision(3);
+          cout << "Your total is: $" << cost << endl;
+          break;
+        default:
+          cout << "We're sorry, but we do not serve that option." << endl;
+          break;
+     }
+     break;
+   default:
+     // They made the wrong decision
+     cout << "That is not an available choice." << endl;
+     break;
+}
+return 0;
+}
